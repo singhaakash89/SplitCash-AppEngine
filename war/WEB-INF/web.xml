@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8" standalone="no"?>
+<web-app xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd"
+	xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" version="3.0"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+
+	<servlet>
+		<servlet-name>Register</servlet-name>
+		<servlet-class>com.app.server.RegisterUser</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>Register</servlet-name>
+		<url-pattern>/register</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>SendUserImageToDevice</servlet-name>
+		<servlet-class>com.app.server.SendUserImageToDevice</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SendUserImageToDevice</servlet-name>
+		<url-pattern>/sendUserImageToDevice</url-pattern>
+	</servlet-mapping>
+
+
+	<servlet>
+		<servlet-name>createGroup</servlet-name>
+		<servlet-class>com.app.server.createGroup</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>createGroup</servlet-name>
+		<url-pattern>/createGroup</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>editMemberAmount</servlet-name>
+		<servlet-class>com.app.server.editMemberAmount</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>editMemberAmount</servlet-name>
+		<url-pattern>/editMemberAmount</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>deleteMember</servlet-name>
+		<servlet-class>com.app.server.deleteMember</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>deleteMember</servlet-name>
+		<url-pattern>/deleteMember</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>sendChat</servlet-name>
+		<servlet-class>com.app.server.sendChat</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>sendChat</servlet-name>
+		<url-pattern>/sendChat</url-pattern>
+	</servlet-mapping>
+
+
+</web-app>
